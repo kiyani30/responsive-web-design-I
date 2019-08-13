@@ -1,3 +1,352 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+a:link, a:visited {
+  color: white;
+  padding: 55px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.title button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: auto;
+  width: auto;
+  font-size: 150%;
+}
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top: 2px solid black;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* TOP CONTENT */
+
+.top-content {
+  display: flex;
+}
+.section {
+  padding: 10px;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 50px;
+  margin-right: 30px; */
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.middle-img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+p {
+  text-align: ;
+  padding: 20px;
+}
+
+.features {
+  justify-content: center;
+}
+
+.services {
+  justify-content: center;
+}
+
+/* PAGE SERVICE */
+
+h2,
+h3 {
+  padding: 20px;
+}
+
+
+.top {
+  display: flex;
+}
+.bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.text {
+	height: 100%;
+  display: flex;
+  align-items: space-around;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+/* CARD */
+
+.card-container{
+	display: flex;
+	height: 900px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	height: 27%;
+	border: 1px solid black;
+	background-color: gainsboro;
+	padding:25px;
+	justify-content: space-between;
+	align-items:flex-start;
+}
+.card h3, p {
+	padding: 0px;
+}
+.card button {
+	margin-top:20px;
+	background-color:white;
+	border:1px solid black;
+	padding:10px 25px;
+	border-radius: 5px;
+	
+}
+
+.service-bottom-content {
+	display: flex;
+	height: 350px;
+	align-items: center;
+
+}
+.service-text {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.service-text h3 {
+	padding: 0px;
+}
 
